@@ -1,0 +1,88 @@
+# OnyxArmor - Armor Sets Configuration
+# Material options: LEATHER, CHAINMAIL, IRON, GOLDEN, DIAMOND, NETHERITE
+# Effects use Bukkit PotionEffectType names. Level is the strength (1 = level I, 2 = level II, etc.)
+
+warrior:
+  display: "&6&lWarrior Set"
+  material: DIAMOND
+  lore:
+    - "&7A legendary set worn by ancient warriors"
+    - "&7Full set: &cStrength II&7, &9Resistance I"
+    - "&7"
+    - "&e&lSet Bonus:"
+    - "&7• Increased damage output"
+    - "&7• Enhanced damage resistance"
+    - "&7• Combat mastery bonuses"
+  effects:
+    - INCREASE_DAMAGE:2
+    - DAMAGE_RESISTANCE:1
+  glow: true
+  partial_bonus: false
+
+mage:
+  display: "&b&lMage Robes"
+  material: LEATHER
+  color: "0,100,255"
+  lore:
+    - "&7Mystical robes infused with arcane magic"
+    - "&7Full set: &aRegeneration II&7, &fSpeed I"
+    - "&7"
+    - "&e&lSet Bonus:"
+    - "&7• Continuous health regeneration"
+    - "&7• Enhanced magical mobility"
+    - "&7• Mana efficiency boost"
+  effects:
+    - REGENERATION:2
+    - SPEED:1
+  glow: true
+  partial_bonus: true
+
+assassin:
+  display: "&8&lAssassin's Garb"
+  material: CHAINMAIL
+  lore:
+    - "&7Dark clothing favored by shadows"
+    - "&7Full set: &fSpeed II&7, &7Jump Boost I"
+    - "&7"
+    - "&e&lSet Bonus:"
+    - "&7• Enhanced mobility"
+    - "&7• Silent movement"
+  effects:
+    - SPEED:2
+    - JUMP_BOOST:1
+  glow: false
+  partial_bonus: true
+
+paladin:
+  display: "&e&lPaladin's Armor"
+  material: GOLDEN
+  lore:
+    - "&7Holy armor blessed by divine light"
+    - "&7Full set: &cStrength I&7, &aRegeneration I"
+    - "&7"
+    - "&e&lSet Bonus:"
+    - "&7• Divine protection"
+    - "&7• Healing aura"
+  effects:
+    - INCREASE_DAMAGE:1
+    - REGENERATION:1
+    - FIRE_RESISTANCE:1
+  glow: true
+  partial_bonus: false
+
+berserker:
+  display: "&4&lBerserker's Hide"
+  material: IRON
+  lore:
+    - "&7Savage armor that enhances rage"
+    - "&7Full set: &cStrength III&7, &fSpeed I"
+    - "&7"
+    - "&e&lSet Bonus:"
+    - "&7• Massive damage boost"
+    - "&7• Increased attack speed"
+  effects:
+    - INCREASE_DAMAGE:3
+    - SPEED:1
+    - FAST_DIGGING:1
+  glow: true
+  partial_bonus: false

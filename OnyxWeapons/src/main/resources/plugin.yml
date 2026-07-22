@@ -1,0 +1,17 @@
+name: OnyxWeapons
+version: 2.0
+main: com.onyx.weapons.OnyxWeapons
+api-version: 1.21
+description: Medieval weapons for the Onyx Realm
+authors: [Onyx]
+
+commands:
+  onyxweapons:
+    description: OnyxWeapons admin commands
+    usage: /onyxweapons <give|list>
+    permission: onyxweapons.admin
+
+permissions:
+  onyxweapons.admin:
+    description: Access to OnyxWeapons admin commands
+    default: op

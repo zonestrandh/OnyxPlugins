@@ -1,0 +1,17 @@
+name: OnyxArmor
+version: 1.1
+main: com.onyx.armor.OnyxArmor
+api-version: 1.21
+description: Custom armor sets for the Onyx Medieval Realm
+authors: [Onyx]
+
+commands:
+  onyxarmor:
+    description: OnyxArmor admin commands
+    usage: /onyxarmor <give|list|reload>
+    permission: onyxarmor.admin
+
+permissions:
+  onyxarmor.admin:
+    description: Access to all OnyxArmor commands
+    default: op

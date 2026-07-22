@@ -1,0 +1,20 @@
+name: OnyxSouls
+version: 1.2
+main: com.onyx.souls.OnyxSouls
+api-version: 1.21
+description: Soul and banishment system for the Onyx Medieval Realm
+authors: [Onyx]
+
+commands:
+  revive:
+    description: Revive a banished player.
+    usage: /revive <player>
+  setlives:
+    description: Set a player's life count.
+    usage: /setlives <player> <amount>
+    permission: onyx.admin
+
+permissions:
+  onyx.admin:
+    description: Access to OnyxSouls admin commands
+    default: op

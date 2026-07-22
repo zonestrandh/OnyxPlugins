@@ -1,0 +1,24 @@
+# OnyxSouls Configuration
+
+souls:
+  # How many lives players start with
+  default-lives: 3
+  # Maximum lives a player can have (enforced by /setlives)
+  max-lives: 10
+
+banishment:
+  # Coordinates in the Nether where banished players are sent
+  x: 0
+  y: 100
+  z: 0
+
+revive:
+  # Cost to revive a banished player (vanilla material name)
+  cost-material: DIAMOND
+  # How many of the above material is required
+  cost-amount: 5
+
+messages:
+  banished: "§4§lONYX §8» §e{player} §7has been banished to the §c§lABYSS§7."
+  life-lost: "§6§lONYX §8» §7You have §c{lives} §7soul(s) remaining."
+  revived: "§6§lONYX §8» §e{reviver} §7has recalled §f{target} §7from the Abyss!"
