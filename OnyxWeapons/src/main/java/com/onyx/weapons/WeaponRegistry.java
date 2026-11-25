@@ -207,13 +207,13 @@ public class WeaponRegistry {
         meta.addEnchant(Enchantment.UNBREAKING, 3, true);
 
         // Strip default attack stats entirely so we can override them
-        meta.removeAttributeModifier(Attribute.GENERIC_ATTACK_DAMAGE);
-        meta.removeAttributeModifier(Attribute.GENERIC_ATTACK_SPEED);
+        meta.removeAttributeModifier(Attribute.ATTACK_DAMAGE);
+        meta.removeAttributeModifier(Attribute.ATTACK_SPEED);
 
         // Base damage tracking
         NamespacedKey dmgKey = new NamespacedKey(plugin, weapon.getId() + "_damage");
         meta.addAttributeModifier(
-            Attribute.GENERIC_ATTACK_DAMAGE,
+            Attribute.ATTACK_DAMAGE,
             new AttributeModifier(
                 dmgKey,
                 weapon.getDamage() - 1.0,
@@ -226,7 +226,7 @@ public class WeaponRegistry {
         NamespacedKey spdKey = new NamespacedKey(plugin, weapon.getId() + "_speed");
         double speedModifier = weapon.getAttackSpeed() - 4.0;
         meta.addAttributeModifier(
-            Attribute.GENERIC_ATTACK_SPEED,
+            Attribute.ATTACK_SPEED,
             new AttributeModifier(
                 spdKey,
                 speedModifier,
